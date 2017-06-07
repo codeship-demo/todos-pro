@@ -10,7 +10,3 @@
   tag: master
   service: deploy
   command: codeship_heroku deploy /deploy todoapp-js
-- name: migrate
-  tag: master
-  service: deploy
-  command: heroku run --app todoapp-js -- "npm run migrate"

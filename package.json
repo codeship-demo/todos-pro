@@ -10,7 +10,7 @@
     "clean": "rm -rf build && mkdir build",
     "build-api": "babel src --out-dir build -s --ignore src/__tests__/**,src/web/**",
     "build": "npm run clean && npm run build-api && npm run webpack",
-    "prestart": "npm run build",
+    "prestart": "npm run build && npm run migrate",
     "start": "node ./build/index.js",
     "lint": "eslint src",
     "test": "jest",
