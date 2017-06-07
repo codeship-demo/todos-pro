@@ -11,4 +11,4 @@
   - name: deploy
     tag: master
     service: deploy
-    command: codeship_heroku deploy /deploy nodejs-express-todoapp
+    command: codeship_heroku deploy /deploy todoapp-js
