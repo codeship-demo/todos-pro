@@ -7,3 +7,4 @@ jest
 *.env
 codeship.aes
 deployment.env
+tmp

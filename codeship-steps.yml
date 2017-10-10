@@ -6,3 +6,8 @@
   - name: tests
     service: web
     command: bin/ci "npm test -- --forceExit"
+- service: web
+  type: push
+  image_name: registry.heroku.com/todos-js/web
+  registry: registry.heroku.com
+  dockercfg_service: heroku_dockercfg

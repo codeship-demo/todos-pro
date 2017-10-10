@@ -1,5 +1,7 @@
 web:
-  build: .
+  build:
+    dockerfile_path: Dockerfile
+    image: registry.heroku.com/todos-js/web
   links:
     - postgres
   environment:
@@ -8,3 +10,7 @@ web:
 postgres:
   image: postgres:9.6.2-alpine
   cached: true
+heroku_dockercfg:
+  image: codeship/heroku-dockercfg-generator
+  add_docker: true
+  encrypted_env_file: deployment.env.encrypted
