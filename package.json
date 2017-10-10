@@ -29,7 +29,7 @@
   "author": "Kelly J Andrews <kelly@kellyjandrews.com>",
   "license": "MIT",
   "engines": {
-    "node": "7.7.1"
+    "node": "8.6.0"
   },
   "bugs": {
     "url": "https://github.com/kellyjandrews/todoapp-js/issues"

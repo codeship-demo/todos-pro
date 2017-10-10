@@ -1,4 +1,4 @@
-FROM node:7.7.2-alpine
+FROM node:8.6.0-alpine
 
 WORKDIR /usr/app
 
@@ -7,3 +7,5 @@ COPY package.json .
 RUN npm install --quiet
 
 COPY . .
+
+CMD ["npm", "start"]
